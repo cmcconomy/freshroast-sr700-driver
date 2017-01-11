@@ -1,0 +1,30 @@
+{
+  "name": "freshroast-sr700",
+  "version": "0.0.1",
+  "description": "FreshRoast SR700 serial-over-USB driver",
+  "main": "index.js",
+  "dependencies": {
+	  "serialport" : "~4.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmcconomy/freshroast-sr700.git"
+  },
+  "keywords": [
+    "coffee",
+    "roast",
+    "freshroast",
+    "sr700",
+    "ch341",
+    "serial"
+  ],
+  "author": "Craig McConomy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmcconomy/freshroast-sr700/issues"
+  },
+  "homepage": "https://github.com/cmcconomy/freshroast-sr700#readme"
+}
