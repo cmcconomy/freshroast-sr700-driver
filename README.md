@@ -9,7 +9,9 @@ some PID controllers to consider:
 * pid-controller
 * liquid-pid
 
-## Communication Model
+## Communication Loop
+Packets sent from Computer -> Roaster must be at least 250ms apart.
+
 ```
 +----------+          +-------+
 | Computer |          | SR700 |
