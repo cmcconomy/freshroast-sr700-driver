@@ -9,6 +9,7 @@ To generate pretty UML output, install the [PlantUML pre-requisites](http://plan
 * graphviz
 
 To generate output, issue the following command:
-`java -jar lib/plantuml.jar uml/serial-communication_sequence.txt` (or parse whichever document you want)
+`java -jar lib/plantuml.jar uml/serial-communication_sequence.txt` (or parse whichever document you want)  
+
 to output text to command line:
 `cat uml/serial-communication_sequence.txt | java -jar lib/plantuml.jar -pipe -tutxt`
