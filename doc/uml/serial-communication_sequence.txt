@@ -1,0 +1,7 @@
+@startuml
+driver  -> SR700: init
+driver <-- SR700: recipe line 0..(n-1)
+driver <-- SR700: recipe line n
+driver  -> SR700: setState
+driver <-- SR700: currState
+@enduml
