@@ -8,19 +8,26 @@ Note that it's *critical* to use a modern version of node such as 6.9+, or else 
 Packets sent from Computer -> Roaster must be at least 250ms apart.
 
 ```
-+----------+          +-------+
-| Computer |          | SR700 |
-+----------+          +-------+
-     |                    |
-     |-------(init)------>|
-     |                    |
-     |<-----(recipe)------|
-     |                    |
-     |-----(set state)--->|
-     |                    |
-     |<--(report state)---|
-     |                    |
-     |                    |
+     ┌──────┐              ┌─────┐
+     │driver│              │SR700│
+     └──┬───┘              └──┬──┘
+        │         init        │   
+        │ ────────────────────>   
+        │                     │   
+        │ recipe line 0..(n-1)│   
+        │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─    
+        │                     │   
+        │    recipe line n    │   
+        │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─    
+        │                     │   
+        │       setState      │   
+        │ ────────────────────>   
+        │                     │   
+        │      currState      │   
+        │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─    
+     ┌──┴───┐              ┌──┴──┐
+     │driver│              │SR700│
+     └──────┘              └─────┘
 ```
 
 ## PID research (for later)
