@@ -4,7 +4,8 @@
   "description": "FreshRoast SR700 serial-over-USB driver",
   "main": "index.js",
   "dependencies": {
-	  "serialport" : "~4.0.7"
+    "debug": "^2.6.0",
+    "serialport": "~4.0.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
