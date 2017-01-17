@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "debug": "^2.6.0",
+    "pid-controller": "^1.0.5",
     "serialport": "~4.0.7"
   },
   "scripts": {
