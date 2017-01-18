@@ -4,8 +4,8 @@
   "description": "FreshRoast SR700 serial-over-USB driver",
   "main": "index.js",
   "dependencies": {
-    "debug": "^2.6.0",
-    "pid-controller": "^1.0.5",
+    "debug": "~2.6.0",
+    "pid-controller": "~1.0.5",
     "serialport": "~4.0.7"
   },
   "scripts": {
